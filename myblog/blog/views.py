@@ -1,8 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, HttpResponse
+
 
 # Create your views here.
 
 
-def index(request):
-    return HttpResponse("<h1>Hola desde blog<h1>")
+def posts(request):
+    return HttpResponse("<h1>Pagina de publicaciones<h1>")
+
+
+def post(request, id):
+    return HttpResponse("<h1>Pagina de blog<h1>")

@@ -1,7 +1,6 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, HttpResponse
 
 
 # Create your views here.
-def index(request):
+def profile(request):
     return HttpResponse("<h1>Hola desde perfil<h1>")
